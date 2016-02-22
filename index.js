@@ -240,7 +240,7 @@ function generateShorewallRules(callback){
 				}
 				
 				if(destPorts.length > 0 && destPorts[0] != ""){
-					return rules[vmId].push("DNAT		net		prv:" + ip + ":" + destPorts.join(",") + "	" + protocol + "	" + port + "	-		" + wanIp);
+					return rules[vmId].push("DNAT		net		prv:" + ip + ":" + destPorts[k] + "	" + protocol + "	" + port + "	-		" + wanIp);
 				}
 			});
 		}
