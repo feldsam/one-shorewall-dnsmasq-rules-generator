@@ -1,4 +1,4 @@
-# Opennebula shorewall/dnsmasq rules generator (one-shorewall-dnsmasq-rules-generator)
+# Opennebula shorewall/dnsmasq rules generator
 
 ## This nodejs script generates
 
