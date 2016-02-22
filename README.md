@@ -29,3 +29,27 @@
 											forwards tcp port 1122 and wan ip address 89.187.133.160 on gateway to port 22 on vm
 	
 	More rules can be separated by pipe	ex. 1122:22/tcp|80/tcp|53/udp
+
+
+### Example
+
+#### VM 201
+
+![alt tag](https://raw.githubusercontent.com/feldsam/one-shorewall-dnsmasq-rules-generator/master/readme_images/vm201.png)
+
+#### VM 189
+
+![alt tag](https://raw.githubusercontent.com/feldsam/one-shorewall-dnsmasq-rules-generator/master/readme_images/vm189.png)
+
+#### Generated shorewall DNAT rules
+
+	# Forward rules for VM ID: 189
+	DNAT		net		prv:10.0.1.2	tcp	27	-		89.187.133.167
+	DNAT		net		prv:10.0.1.2	tcp	29	-		89.187.133.167
+	DNAT		net		prv:10.0.1.2	udp	53	-		89.187.133.166
+	# Forward rules for VM ID: 201
+	DNAT		net		prv:10.0.1.2	tcp	25	-		89.187.133.166
+	DNAT		net		prv:10.0.1.2	tcp	26	-		89.187.133.166
+	DNAT		net		prv:10.0.1.2	tcp	27	-		89.187.133.166
+	DNAT		net		prv:10.0.1.2	tcp	29	-		89.187.133.166
+	DNAT		net		prv:10.0.1.2:22	tcp	1122	-		89.187.133.166
