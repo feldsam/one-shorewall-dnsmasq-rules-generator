@@ -1,9 +1,9 @@
-# one-shorewall-dnsmasq-rules-generator
+# Opennebula shorewall/dnsmasq rules generator (one-shorewall-dnsmasq-rules-generator)
 
 ## This nodejs script generates
 
- - dnsmasq config ip ranges and hosts based on mac addresses
  - shorewall DNAT (forward) rules based on configuration in VM USER_TEMPLATE
+ - dnsmasq config ip ranges and hosts based on mac addresses
 
 ## How to define port forward rules in Opennebula VM.USER_TEMPLATE
 
