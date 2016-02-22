@@ -44,9 +44,9 @@
 #### Generated shorewall DNAT rules
 
 	# Forward rules for VM ID: 189
-	DNAT		net		prv:10.0.1.2	tcp	27	-		89.187.133.167
-	DNAT		net		prv:10.0.1.2	tcp	29	-		89.187.133.167
-	DNAT		net		prv:10.0.1.2	udp	53	-		89.187.133.166
+	DNAT		net		prv:10.0.1.1	tcp	27	-		89.187.133.167
+	DNAT		net		prv:10.0.1.1	tcp	29	-		89.187.133.167
+	DNAT		net		prv:10.0.1.1	udp	53	-		89.187.133.166
 	# Forward rules for VM ID: 201
 	DNAT		net		prv:10.0.1.2	tcp	25	-		89.187.133.166
 	DNAT		net		prv:10.0.1.2	tcp	26	-		89.187.133.166

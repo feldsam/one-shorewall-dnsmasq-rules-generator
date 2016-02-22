@@ -171,6 +171,7 @@ function generateShorewallRules(callback){
 					}
 					
 					for(ruleId in ruleIds){
+						var ip = ruleIds[ruleId].ip;
 						var srcPorts = ruleIds[ruleId].srcPorts;
 						var destPorts = ruleIds[ruleId].destPorts;
 
