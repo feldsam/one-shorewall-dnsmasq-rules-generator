@@ -1,0 +1,17 @@
+{
+  "name": "one-shorewall-dnsmasq-rules-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kristián Feldsam <feldsam@gmail.com> (http://www.feldsam.cz)",
+  "license": "ISC",
+  "dependencies": {
+    "ip": "^0.3.3",
+    "opennebula": "^1.0.7",
+    "sprintf": "^0.1.5",
+    "sprintf-js": "^1.0.3"
+  }
+}
